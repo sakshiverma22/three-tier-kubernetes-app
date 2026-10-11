@@ -5,7 +5,7 @@ const os = require("os");
 
 const app = express();
 const PORT = process.env.PORT || 5000;
-const MONGO_URI = process.env.MONGO_URI || "mongodb://mongodb-service:27017/testdb";
+const MONGO_URI = process.env.MONGO_URI || "mongodb+srv://sakshivermah_db_user:<db_password>@cluster0.geogsa.mongodb.net/?appName=Cluster0";
 
 let requestCount = 0;
 const startedAt = Date.now();
