@@ -1,3 +1,11 @@
+const { webcrypto } = require("node:crypto");
+
+// MongoDB driver 7 uses the Web Crypto API. Older Node runtimes on some
+// hosts do not expose it as a global, so provide the Node implementation.
+if (!globalThis.crypto) {
+  globalThis.crypto = webcrypto;
+}
+
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
