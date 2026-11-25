@@ -183,9 +183,6 @@ Imagine an e-commerce app.
 
 If the backend becomes slow or the database disconnects, users may not be able to place orders. LiveOps helps developers quickly see what part of the system is healthy or broken.
 
-## Interview Explanation
-
-LiveOps is a real-time monitoring dashboard for a full-stack cloud-native application. The React frontend listens to a live event stream from the Express backend using Server-Sent Events. The backend checks MongoDB through Mongoose and sends fresh health snapshots every two seconds. This lets the dashboard update service status, latency, request count, uptime, and logs without refreshing the page.
 
 ## Notes
 
